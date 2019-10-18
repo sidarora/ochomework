@@ -12,7 +12,7 @@ REPO=$2
 CLUSTER=$3
 echo "Setting up Jenkins in project ${GUID}-jenkins from Git Repo ${REPO} for Cluster ${CLUSTER}"
 
-# Set up Jenkins with sufficient resources
+# Set up Jenkins with sufficient resource
 oc new-app jenkins-persistent \
 	--param ENABLE_OAUTH=true \
 	--param MEMORY_LIMIT=4Gi \
